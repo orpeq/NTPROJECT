@@ -1,0 +1,88 @@
+.navigation {
+  height: 7.1rem;
+  background-color: #fff;
+  height: 7.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  order: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  @include respond(phone) {
+    font-size: .8rem;
+    justify-content: center;
+    float: left;
+    
+  }
+  @include respond(phone-nav) {
+    font-size: 1rem;
+    justify-content: center;
+    float: left;
+  }
+
+  
+}
+
+.logo {
+  padding-left: 4rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.1rem;
+  width: 100%;
+  @include respond(phone) {
+    font-size: 1.1rem;
+    word-break: keep-all;
+    width: 100%;
+    margin-top: -.7rem;
+  }
+  @include respond(phone-nav) {
+    font-size: 1.1rem;
+    word-break: keep-all;
+    width: 100%;
+    margin-top: -.7rem;
+  }
+}
+
+.navigation__nav {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  margin-right: 8rem;
+  margin-left: 2rem;
+  @include respond(phone) {
+    margin-left: -1rem;
+    
+  }
+}
+li {
+  list-style: none;
+}
+
+li.navigation__item {
+  list-style: none;
+  text-decoration: none;
+  margin-top: -3.5rem;
+  @include respond(phone) {
+    margin-top: 4.2rem;
+    font-size: 1rem;
+    margin-left: -10px;
+  }
+}
+li:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+}
+a:hover {
+  color: #a9c9fd;
+  text-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+}

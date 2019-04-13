@@ -1,0 +1,41 @@
+{
+  "name": "ntproject",
+  "version": "1.0.0",
+  "description": "NTPROJECT task for MediaPark",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/sass/main.scss src/css/main.css -w",
+    "compile": "node-sass src/sass/main.scss src/css/main.comp.css",
+    "concat": "concat -o src/css/main.concat.css src/css/icon-font.css src/css/main.comp.css "
+  },
+  "license": "ISC",
+  "author": "Tomas Antanaitis",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concat": "^1.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-promise": "^4.1.1",
+    "gulp": "^3.9.1",
+    "html-linter": "^1.1.1",
+    "jquery": "^3.4.0"
+  },
+  "dependencies": {
+    "git": "^0.1.5",
+    "gulp-sass": "^4.0.2",
+    "install": "^0.12.2",
+    "node-sass": "^4.10.0",
+    "npm": "^6.4.1",
+    "npx": "^10.2.0",
+    "sass": "^1.15.1",
+    "simplelightbox": "^1.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orpeq/NTPROJECT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orpeq/Natours/issues"
+  },
+  "homepage": "https://github.com/orpeq/Natours#readme"
+}

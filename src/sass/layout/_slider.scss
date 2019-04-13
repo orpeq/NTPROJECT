@@ -1,0 +1,162 @@
+.slider {
+  background: url('../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding-top: 5rem;
+  position: relative;
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    width: 100%;
+    margin-left: 3%;
+
+    @include respond(slider) {
+      width: 45rem;
+      height: 42rem;
+    }
+  }
+}
+
+.slider__item {
+  justify-content: space-between;
+  padding-right: 5%;
+  margin: 0 10rem 0 10rem;
+  flex-wrap: wrap;
+  padding-bottom: 8rem;
+
+  @include respond(slider) {
+    padding-left: 15%;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 15rem;
+  }
+
+  .slider__image--1 {
+    width: 35.8rem;
+    height: 30rem;
+    background-image: url('../../assets/jason-briscoe-1.png');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 25%;
+    margin-bottom: 0;
+    @include respond(slider) {
+      width: 45rem;
+      height: 42rem;
+    }
+  }
+  .slider__image--2 {
+    width: 35.8rem;
+    height: 30rem;
+    background-image: url('../../assets/tu-tu-322210-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 25%;
+    @include respond(slider) {
+      width: 45rem;
+      height: 42rem;
+    }
+  }
+  .slider__image--3 {
+    width: 35.8rem;
+    height: 30rem;
+    background-image: url('../../assets/kirill-975619-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 25%;
+    @include respond(slider) {
+      width: 45rem;
+      height: 42rem;
+    }
+  }
+  .slider__caption {
+    font-size: 3.3rem;
+    margin-top: 2rem;
+    padding: 0 1rem 0 1rem;
+  }
+  .slider__figcaption {
+    font-size: 2rem;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 2rem;
+    padding: 0 1rem 0 1rem;
+    font-weight: 200;
+  }
+
+  .slider__item--1 {
+    width: 35.8rem;
+    height: 55.9rem;
+    margin-top: 15rem;
+    background-color: white;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 10%;
+    -webkit-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    @include respond(slider) {
+      width: 45rem;
+      height: 75rem;
+    }
+  }
+  .slider__item--2 {
+    width: 35.8rem;
+    height: 55.9rem;
+    margin-top: 15rem;
+    background-color: white;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 10%;
+    -webkit-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    @include respond(slider) {
+      width: 45rem;
+      height: 75rem;
+    }
+  }
+  .slider__item--3 {
+    width: 35.8rem;
+    height: 55.9rem;
+    margin-top: 15rem;
+    background-color: white;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 10%;
+    -webkit-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
+    @include respond(slider) {
+      width: 45rem;
+      height: 75rem;
+    }
+  }
+
+  .arrow-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    &__arrow--left {
+    }
+
+    &__arrow--right {
+    }
+  }
+
+  button {
+    display: hidden;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

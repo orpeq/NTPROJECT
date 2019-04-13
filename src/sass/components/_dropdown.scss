@@ -1,0 +1,122 @@
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  
+}
+
+nav ul {
+	flex-direction: row;
+  justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    @include respond(tab-port) {
+      justify-content: center;
+    } 
+  
+}
+nav li {
+    float: left;
+    margin: 0;
+    
+    position: relative;
+    width: 22rem;
+
+    @include respond(tab-port) {
+      width: 18rem;
+      font-size: 1.3rem;
+    } 
+
+    @include respond(phone-nav) {
+      width: 10rem;
+      font-size: 1.1rem;
+    } 
+
+    @include respond(phone) {
+      width: 10;
+      font-size: .6rem;
+    } 
+
+    @include respond(mobile) {
+      width: 6;
+      font-size: .6rem;
+    }
+    
+  
+}
+nav a {
+    background: #A7C0E8;
+    border-radius: 5rem;
+    padding: 1rem;
+  
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav .dropdown:after {
+    content: ' ▶';
+    @include respond(phone-nav) {
+      content: '';
+    } 
+    
+}
+nav .dropdown:hover:after{
+  content:'\25bc';
+  @include respond(phone-nav) {
+    content: '';
+  }
+}
+nav li:hover a {
+    background: #fff;
+    border-radius: 0;
+    color:#A7C0E8
+}
+nav li ul {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 1;
+    top: 3.5rem;
+    visibility: visible;
+}
+nav li ul li {
+    float: none;
+    width: 100%;
+}
+nav li ul a:hover {
+    background: rgba(255, 255, 255, 0.699)
+}
+
+/* Clearfix */
+
+.cf:after, .cf:before {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}

@@ -377,17 +377,17 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-left: 0;
     justify-content: space-around;
     margin-bottom: 5rem;
-    width: 100%;
-    margin-left: 3%; }
+    width: 100%; }
 
 .slider__item {
   justify-content: space-between;
-  padding-right: 5%;
   margin: 0 10rem 0 10rem;
   flex-wrap: wrap;
-  padding-bottom: 8rem; }
+  padding-bottom: 8rem;
+  border: 0; }
   .slider__item .slider__image--1 {
     width: 35.8rem;
     height: 30rem;
@@ -451,11 +451,22 @@ a:hover {
     -webkit-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
     -moz-box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68);
     box-shadow: 12px 11px 35px 0px rgba(0, 0, 0, 0.68); }
-  .slider__item .arrow-buttons {
+  .slider__item .slider__item--btn-left,
+  .slider__item .slider__item--btn-right {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center; }
+    @media only screen and (max-width: 78.75em) {
+      .slider__item .slider__item--btn-left,
+      .slider__item .slider__item--btn-right {
+        display: none; } }
+  .slider__item .slider__item--btn-left {
+    align-content: center;
+    flex-direction: row; }
+  .slider__item .slider__item--btn-right {
+    align-content: center;
+    flex-direction: row; }
   .slider__item button {
     display: hidden;
     border: none;
